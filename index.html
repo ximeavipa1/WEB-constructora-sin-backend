@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio - Empresa Constructora</title>
+  <meta name="description" content="Portafolio de proyectos - Empresa constructora. Obras, servicios y contacto.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+       <a class="navbar-brand" href="#">
+         <img src="assets/images/logo.svg" alt="Logo" width="50">
+       </a>
+       <a class="navbar-brand" href="#">ConstructoraMA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-white">
+    <div class="container">
+      <div>
+        <h1 class="display-5 fw-bold titulo-principal">
+          Construimos espacios que perduran
+        </h1>
+        <p class="lead text-white-50">
+          Proyectos residenciales y comerciales entregados con calidad y compromiso. Mira nuestros trabajos recientes.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROYECTOS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4 mb-0">Proyectos destacados</h2>
+        <a href="#" class="small text-decoration-none">Ver todo</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card project-card">
+            <img src="assets/images/project1_vistamar.jpg" class="card-img-top" alt="Fachada moderna frente al mar - Edificio Vista Mar">
+            <div class="card-body">
+              <h5 class="card-title">Edificio Vista Mar</h5>
+              <p class="card-text text-muted small">Rehabilitación de fachada y diseño interior para complejo residencial.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card project-card">
+            <img src="assets/images/project2_centrocomercial.jpg" class="card-img-top" alt="Fachada de centro comercial moderno - Centro Comercial Sol">
+            <div class="card-body">
+              <h5 class="card-title">Centro Comercial Sol</h5>
+              <p class="card-text text-muted small">Construcción llave en mano de centro comercial de 12.000 m².</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card project-card">
+            <img src="assets/images/project3_casafamiliar.jpg" class="card-img-top" alt="Vivienda unifamiliar con jardín - Casa Familiar Los Olivos">
+            <div class="card-body">
+              <h5 class="card-title">Casa Familiar Los Olivos</h5>
+              <p class="card-text text-muted small">Vivienda unifamiliar con diseño sostenible y materiales locales.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALERÍA DE PROYECTOS (Carrusel) -->
+<section id="gallery" class="container py-5">
+  <h2 class="text-center mb-4">Galería</h2>
+
+  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Primer slide -->
+      <div class="carousel-item active">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="assets/images/thumb1.jpg" class="d-block w-100 rounded" alt="Proyecto 1">
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/thumb2.jpg" class="d-block w-100 rounded" alt="Proyecto 2">
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/thumb3.jpg" class="d-block w-100 rounded" alt="Proyecto 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Segundo slide -->
+      <div class="carousel-item">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="assets/images/thumb4.jpg" class="d-block w-100 rounded" alt="Proyecto 4">
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/thumb5.jpg" class="d-block w-100 rounded" alt="Proyecto 5">
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/thumb6.jpg" class="d-block w-100 rounded" alt="Proyecto 6">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="h4 mb-4">Nuestros servicios</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="service-box h-100">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-building-up fs-2"></i>
+              <div>
+                <h5 class="mb-1">Construcción residencial</h5>
+                <p class="small text-muted mb-0">Proyectos desde la planificación hasta la entrega final.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="service-box h-100">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-gear-fill fs-2"></i>
+              <div>
+                <h5 class="mb-1">Obra civil y estructural</h5>
+                <p class="small text-muted mb-0">Diseño y ejecución con criterios de seguridad y durabilidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="service-box h-100">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-brush fs-2"></i>
+              <div>
+                <h5 class="mb-1">Remodelación y acabados</h5>
+                <p class="small text-muted mb-0">Actualización estética y funcional de espacios existentes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <img src="assets/images/about.jpg" alt="Sobre nosotros" class="about-img w-100">
+        </div>
+        <div class="col-lg-6">
+          <h3>Sobre nosotros</h3>
+          <p class="text-muted">Con más de 10 años en el sector, nuestra misión es entregar proyectos con los más altos estándares de calidad, cumplimiento y seguridad. Trabajamos con clientes residenciales, comerciales e institucionales.</p>
+          <ul class="list-unstyled small text-muted">
+            <li><strong>Experiencia:</strong> Proyectos a escala local y regional</li>
+            <li><strong>Equipo:</strong> Arquitectos, ingenieros y personal calificado</li>
+            <li><strong>Calidad:</strong> Certificaciones y cumplimiento normativo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light" aria-labelledby="contact-heading">
+  <div class="container">
+    <!-- Título -->
+    <h2 class="h4 mb-3" id="contact-heading">Contacto</h2>
+    
+    <div class="row g-4">
+      <!-- Información de contacto -->
+      <div class="col-12 col-md-6">
+        <div class="p-4 bg-white rounded-3 shadow-sm" role="contentinfo">
+          <h5 class="mb-2">Escríbenos</h5>
+          <p class="small text-muted mb-0">
+            Tel: 
+            <a href="tel:+573000000000" class="text-decoration-none" aria-label="Llamar al número +57 300 000 0000">
+              <strong>+57 300 000 0000</strong>
+            </a>
+            <br>
+            Email: 
+            <a href="mailto:contacto@constructoraMA.com" class="text-decoration-none" aria-label="Enviar correo a contacto@constructora.com">
+              <strong>contacto@constructora.com</strong>
+            </a>
+          </p>
+          <hr>
+          <p class="small text-muted mb-0">Dirección: Calle Falsa 123, Ciudad</p>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="col-12 col-md-6">
+        <form id="contact-form" aria-label="Formulario de contacto">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" required aria-required="true">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-white py-4">
+  <div class="container d-flex flex-column align-items-center">
+    <p class="mb-2 small text-center">&copy; <span id="year"></span> ConstructoraMA. Todos los derechos reservados.</p>
+    <div class="d-flex gap-3">
+      <a href="https://www.facebook.com/" target="_blank" class="text-muted"><i class="bi bi-facebook fs-4"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="text-muted"><i class="bi bi-instagram fs-4"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" class="text-muted"><i class="bi bi-linkedin fs-4"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    emailjs.init("7LcEfjivieGlE_EZ4"); 
+  })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

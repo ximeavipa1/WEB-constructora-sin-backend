@@ -1,0 +1,88 @@
+:root {
+  --primary: #014F86;
+  --secondary: #00B4D8;
+  --aqua: #7FDBFF;
+  --seafoam: #B2F7EF;
+  --sand: #66c9f0;
+  --muted: #7eb6e7;
+  --dark: #0caefa;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero con degradado Instagram + Canva */
+.hero {
+  background: linear-gradient(
+      to bottom right,
+      rgba(1, 79, 134, 0.85),   /* Azul profundo */
+      rgba(0, 180, 216, 0.85),  /* Turquesa */
+      rgba(72, 202, 228, 0.85), /* Celeste vibrante */
+      rgba(144, 224, 239, 0.85) /* Verde agua */
+    ),
+    url('../assets/images/hero.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Cards */
+.project-card {
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(15,15,15,0.12);
+}
+
+.project-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* About image */
+.about-img {
+  border-radius: 12px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Services */
+.service-box {
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(10,10,10,0.04);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .project-card img {
+    height: 180px;
+  }
+}
